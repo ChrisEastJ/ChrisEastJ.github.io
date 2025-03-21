@@ -1,0 +1,127 @@
+String webpage = 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multiple Lists</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            margin-bottom: 40px; /* Space between lists */
+        }
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .list-item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .number {
+            width: 25px;
+            text-align: right;
+            font-weight: bold;
+        }
+        .content {
+            text-align: left;
+        }
+        .item-1 { font-size: 2em; font-weight: bold; }
+        .item-2 { font-size: 1.5em; font-weight: bold; }
+        .item-3 { font-size: 1.2em; font-weight: bold; }
+        .normal { font-size: 1em; }
+
+        /* Container for bottom lists */
+        .lists-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        }
+
+        /* Mobile-friendly layout */
+        @media (max-width: 768px) {
+            .lists-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container {
+                width: 90%; /* Makes sure lists don't get too narrow */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main List -->
+    <div class="container">
+        <div class="title">Total Points</div>
+        <div class="list-item item-1"><span class="number">1.</span> <span class="content">Item One</span></div>
+        <div class="list-item item-2"><span class="number">2.</span> <span class="content">Item Two</span></div>
+        <div class="list-item item-3"><span class="number">3.</span> <span class="content">Item Three</span></div>
+        <div class="list-item normal"><span class="number">4.</span> <span class="content">Item Four</span></div>
+        <div class="list-item normal"><span class="number">5.</span> <span class="content">Item Five</span></div>
+        <div class="list-item normal"><span class="number">6.</span> <span class="content">Item Six</span></div>
+        <div class="list-item normal"><span class="number">7.</span> <span class="content">Item Seven</span></div>
+        <div class="list-item normal"><span class="number">8.</span> <span class="content">Item Eight</span></div>
+        <div class="list-item normal"><span class="number">9.</span> <span class="content">Item Nine</span></div>
+        <div class="list-item normal"><span class="number">10.</span> <span class="content">Item Ten</span></div>
+    </div>
+
+    <!-- Three Copies of the List -->
+    <div class="lists-container">
+        <div class="container">
+            <div class="title">Most Species</div>
+            <div class="list-item item-1"><span class="number">1.</span> <span class="content">Item One</span></div>
+            <div class="list-item item-2"><span class="number">2.</span> <span class="content">Item Two</span></div>
+            <div class="list-item item-3"><span class="number">3.</span> <span class="content">Item Three</span></div>
+            <div class="list-item normal"><span class="number">4.</span> <span class="content">Item Four</span></div>
+            <div class="list-item normal"><span class="number">5.</span> <span class="content">Item Five</span></div>
+            <div class="list-item normal"><span class="number">6.</span> <span class="content">Item Six</span></div>
+            <div class="list-item normal"><span class="number">7.</span> <span class="content">Item Seven</span></div>
+            <div class="list-item normal"><span class="number">8.</span> <span class="content">Item Eight</span></div>
+            <div class="list-item normal"><span class="number">9.</span> <span class="content">Item Nine</span></div>
+            <div class="list-item normal"><span class="number">10.</span> <span class="content">Item Ten</span></div>
+        </div>
+
+        <div class="container">
+            <div class="title">Number of families</div>
+            <div class="list-item item-1"><span class="number">1.</span> <span class="content">Item One</span></div>
+            <div class="list-item item-2"><span class="number">2.</span> <span class="content">Item Two</span></div>
+            <div class="list-item item-3"><span class="number">3.</span> <span class="content">Item Three</span></div>
+            <div class="list-item normal"><span class="number">4.</span> <span class="content">Item Four</span></div>
+            <div class="list-item normal"><span class="number">5.</span> <span class="content">Item Five</span></div>
+            <div class="list-item normal"><span class="number">6.</span> <span class="content">Item Six</span></div>
+            <div class="list-item normal"><span class="number">7.</span> <span class="content">Item Seven</span></div>
+            <div class="list-item normal"><span class="number">8.</span> <span class="content">Item Eight</span></div>
+            <div class="list-item normal"><span class="number">9.</span> <span class="content">Item Nine</span></div>
+            <div class="list-item normal"><span class="number">10.</span> <span class="content">Item Ten</span></div>
+        </div>
+
+        <div class="container">
+            <div class="title">Copy 3</div>
+            <div class="list-item item-1"><span class="number">1.</span> <span class="content">Item One</span></div>
+            <div class="list-item item-2"><span class="number">2.</span> <span class="content">Item Two</span></div>
+            <div class="list-item item-3"><span class="number">3.</span> <span class="content">Item Three</span></div>
+            <div class="list-item normal"><span class="number">4.</span> <span class="content">Item Four</span></div>
+            <div class="list-item normal"><span class="number">5.</span> <span class="content">Item Five</span></div>
+            <div class="list-item normal"><span class="number">6.</span> <span class="content">Item Six</span></div>
+            <div class="list-item normal"><span class="number">7.</span> <span class="content">Item Seven</span></div>
+            <div class="list-item normal"><span class="number">8.</span> <span class="content">Item Eight</span></div>
+            <div class="list-item normal"><span class="number">9.</span> <span class="content">Item Nine</span></div>
+            <div class="list-item normal"><span class="number">10.</span> <span class="content">Item Ten</span></div>
+        </div>
+    </div>
+
+</body>
+</html>
