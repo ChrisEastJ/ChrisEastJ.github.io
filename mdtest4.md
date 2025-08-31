@@ -1,5 +1,5 @@
 ---
-layout: defaultminusname
+layout: default
 ---
 # ChrisEastJ.github.io
 Website -
